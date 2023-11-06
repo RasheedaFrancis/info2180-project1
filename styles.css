@@ -8,64 +8,134 @@ body {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    font-family:  '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif';
+    font-size: 18px;
+    
 }
 
+ nav li a {
+    text-decoration: none;
+    color: #6b7280;
+   
+    
+
+}
 header{
     display: flex;
-    margin: 0 auto;
-    padding-top: 0px;
+    justify-content: center;
     flex-direction: row;
+    background-color: white;
+    font-size: 18px;
+    padding-left:30px 
+
 
 }
 
 header .container{
     display:flex;
     align-items: center;
+   
 }
 header nav ul{
     
     display: flex;
     flex-direction:row;
-    padding-left: 300px;
+    padding-left: 200px;
     text-align: right;
+    
 }
 
 header nav ul li{
     margin-left :15px;
     list-style:none;
-
-}
-
-section.overview-hero{
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    
+    
     
 
 }
 
+header ul li :hover{
+    color:#5A67D8 ;
+}
+
+.article-body p{
+    padding-left: 20%;
+}
+
+.overview-hero{
+ background-color: #E2E8F0;
+
+}
+
+section.overview-hero .container{
+    display: flex;
+    
+    flex-direction: row;
+    margin: 0px;
+    padding-right: 200px;
+  
+
+}
+
+.overview-hero .container .overview-hero-text{
+    padding-right: 200px;
+}
 
 section.overview-hero .container .overview-hero-image img{
+   
 
-    max-height: 20%;
-    max-width: 20%;
+    height:150px;
+    width: 150px;
     float:left;
     padding-right: 30px;
+    padding-left: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     
    
-    
+ 
 }
 
+section.learn-about .container{
+    
+    align-items: center;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
 section.learn-about .container .cards{
 
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto ;
+    padding-right: 100px;
+
+
+    
 
 }
 
+section.learn-about .container .cards .card {
+    margin:10px;
+    border-color: #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 1px #888;
+    padding-bottom:10px;
+    padding-left:20px;
+     
+    
+}
+section.learn-about h2{
+    color:#48BB78;
+    font-size: 24px;
+}
+section.learn-about h3{
+    color:#48BB78;
+    font-size: 21px;
+}
 .card:nth-of-type(1) img{
+  
   height:200px;
   width: 200px;
+
   
 }
 
@@ -81,22 +151,47 @@ section.learn-about .container .cards{
      
 }
 
+.testing{
+background-color: #4A5568;
+color:white;
+
+}
 section.testing .container{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
+    padding-left: 50px;
+    margin: 0%;
+    padding-right: 200px;
+    height: 250px;
+
 }
 section.testing .container .testing-desciption{
    width:50%;
-   
-   
+   padding-left: 150px;
+   padding-right: 100px;
    
 }
 
-section.testing .container .cta{
-    width: 20%;
+
+section.testing .container .cta {
+    display: block;
+    width: 12%;
+    text-align: center;
+    float: right;
+    background-color: #48BB78;
+    color: white;
+    border-radius: 5px;
+    height: 35px;
     
-    text-align: right;
+}
+
+section.testing .container .cta  .btn{
+    color: white;
+    text-decoration: none;
+     
+    
 }
 
 
@@ -104,39 +199,92 @@ section.stories{
     display:flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 30px;
+   
    
 }
 
-section.stories .container .article-body{
+
+.stories .container .article-body {
     
     padding-bottom: 20px;
+    padding-left: 30px;
 
+
+}
+
+section.stories .container h2, p a {
+    color: #5A67D8;
+    text-decoration: none;
+ 
+    
+} 
+
+section.stories h3{
+    font-size: 18px;
 }
 
 section.stories .container  img{
 
-
-    max-height: 20%;
-    max-width: 20%;
+    height: 20%;
+    width: 20%;
     float:left;
     padding-right: 30px;
-    
+    border-radius: 50%;
     
 }
 
-section.newsletter .container{
+
+
+.newsletter {
     display: flex;
-    justify-content: center;
+    justify-content:  center;
     align-items: center;
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 20px;
+    margin: 0px;
+    height:200px;
+    width: 100%;
+    background-color: #48BB78;
+    color:white;
+    text-align: center;
+    
+   
+    
+   
 }
 
 .newsletter .container form{
     display: flex;
-    flex-direction:row;
-    padding-bottom: 50px;
-
-
+    justify-content: center;
+    text-align: center;
+  
+    
+    
 }
+
+.newsletter .container form button{
+    background-color: #5A67D8;
+    color:white;
+    margin-left: 8px;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+}   
+.newsletter .container form input{
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+}
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #4A5568;
+    color: white;
+    margin: 0px;
+    padding:0px;
+    height:60px;
+    
+}
+
